@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт-визитка | Илья — Верстальщик</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Canvas для снега -->
+  <canvas id="snow-canvas"></canvas>
+
+  <div class="content">
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-placeholder">
+            <div class="logo-box">
+              <img src="img/1764840576.png" alt="Logo" class="logo-img">
+            </div>
+            <div class="logo-text">
+              <h1>Ilya<span style="color:#2196f3">Dev</span></h1>
+              <h2>Верстка: Илья</h2>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#about">Обо мне</a></li>
+              <li><a href="#projects">Проекты</a></li>
+              <li><a href="#contact">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="badge">
+          <i class="fas fa-snowflake"></i>
+          Сайт-визитка верстальщика
+        </div>
+        <h1>Привет! Я — <span>Илья</span>,<br>верстальщик</h1>
+        <p>Создаю адаптивные, анимированные веб-интерфейсы с любовью к деталям и плавным переходам</p>
+        <div class="btn-group">
+          <a href="#projects" class="btn btn-primary">
+            <img src="img/1764840576.png" alt="logo" class="badge-logo">
+            Мои проекты
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i>
+            Написать мне
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>Обо мне</h2>
+          <div class="divider"></div>
+          <p>Несколько слов о моем опыте, подходе и увлечениях в мире веб-разработки</p>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <div class="avatar">
+              <i class="fas fa-code"></i>
+            </div>
+          </div>
+          <div class="about-text">
+            <h3>Я создаю цифровые решения с душой</h3>
+            <p>Более 4 лет занимаюсь версткой и фронтенд-разработкой. Специализируюсь на создании адаптивных, доступных и производительных интерфейсов. Увлекаюсь анимациями, микро-взаимодействиями и зимней эстетикой в дизайне.</p>
+            <p>Верю, что хороший код — это не только функциональность, но и эстетика, читаемость и удовольствие от работы с ним.</p>
+            <div class="skills">
+              <span class="skill">HTML5 & CSS3</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">React</span>
+              <span class="skill">Tailwind CSS</span>
+              <span class="skill">Figma</span>
+              <span class="skill">Адаптивная верстка</span>
+              <span class="skill">Анимации</span>
+              <span class="skill">Доступность</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" style="background: #f5f9ff;">
+      <div class="container">
+        <div class="section-title">
+          <h2>Мои проекты</h2>
+          <div class="divider"></div>
+          <p>Некоторые из моих последних работ в IT-сфере. Все проекты созданы с использованием современных технологий и зимней эстетики</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+            <div class="project-body">
+              <h3>Зимний E-Commerce</h3>
+              <p>Интернет-магазин зимней одежды с анимированным снегом и темной темой для комфортного шоппинга в холода.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Three.js</span>
+                <span class="tech-tag">Stripe</span>
+              </div>
+              <a href="#" class="project-link">
+                Подробнее
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header" style="background: linear-gradient(135deg, #4fc3f7, #29b6f6);">
+              <i class="fas fa-cloud-sun"></i>
+            </div>
+            <div class="project-body">
+              <h3>Снежный Прогноз</h3>
+              <p>Погодное приложение с интерактивной картой и прогнозом снегопадов, визуализацией интенсивности осадков.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Leaflet</span>
+                <span class="tech-tag">OpenWeather API</span>
+              </div>
+              <a href="#" class="project-link">
+                Подробнее
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header" style="background: linear-gradient(135deg, #81d4fa, #4fc3f7);">
+              <i class="fas fa-gift"></i>
+            </div>
+            <div class="project-body">
+              <h3>Новогодний Конструктор</h3>
+              <p>Генератор персонализированных открыток с анимированным снегом, украшениями и возможностью добавить имя получателя.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Framer Motion</span>
+                <span class="tech-tag">Canvas API</span>
+              </div>
+              <a href="#" class="project-link">
+                Подробнее
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Связаться со мной</h2>
+          <div class="divider"></div>
+          <p>Есть проект или идея? Напишите мне, и я отвечу в ближайшее время</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Контактная информация</h3>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>ilya@example.com</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>GitHub</h4>
+                  <p>github.com/ilya-dev</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>LinkedIn</h4>
+                  <p>linkedin.com/in/ilya-dev</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-telegram"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="contact-form">
+            <h3 class="form-title">Отправить сообщение</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Имя *</label>
+                <input type="text" id="name" class="form-control" placeholder="Введите ваше имя" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" class="form-control" placeholder="example@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Сообщение *</label>
+                <textarea id="message" class="form-control" placeholder="Расскажите о вашем проекте или задайте вопрос..." required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">
+                <i class="fas fa-paper-plane"></i>
+                Отправить сообщение
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="footer-logo-box">
+              <img src="img/1764840576.png" alt="logo" class="footer-logo-img">
+            </div>
+            <div class="footer-logo-text">
+              <h3>Ilya<span style="color:#4fc3f7">Dev</span></h3>
+              <p>Верстка: Илья</p>
+            </div>
+          </div>
+          
+          <div class="footer-social">
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-telegram"></i>
+            </a>
+          </div>
+          
+          <div class="copyright">
+            <p>© 2025 Илья. Все права защищены.<br>Создано с ❤️ и зимним настроением</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Инициализация снега
+    document.addEventListener('DOMContentLoaded', function() {
+      let canvas, ctx;
+      let flakes = [];
+      let windX = 0;
+      let mouseX = 0;
+      
+      function initSnow() {
+        canvas = document.getElementById('snow-canvas');
+        ctx = canvas.getContext('2d');
+        
+        // Установка размеров canvas
+        function resizeCanvas() {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+        }
+        
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+        
+        // Создание снежинок
+        for (let i = 0; i < 150; i++) {
+          flakes.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * -canvas.height,
+            size: Math.random() * 4 + 2,
+            speed: Math.random() * 2 + 1,
+            wobble: Math.random() * Math.PI * 2,
+            wobbleSpeed: Math.random() * 0.04 + 0.01
+          });
+        }
+        
+        // Отслеживание мыши
+        document.addEventListener('mousemove', (e) => {
+          mouseX = e.clientX;
+          // Ветер: от центра к краям
+          windX = (mouseX - canvas.width / 2) * 0.001;
+        });
+        
+        // Анимация
+        function animate() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          
+          // Обновление и отрисовка снежинок
+          flakes.forEach(flake => {
+            flake.y += flake.speed;
+            flake.x += windX + Math.cos(flake.wobble) * 0.5;
+            flake.wobble += flake.wobbleSpeed;
+            
+            // Сброс при выходе за пределы экрана
+            if (flake.y > canvas.height + 50) {
+              flake.y = -50;
+              flake.x = Math.random() * canvas.width;
+            }
+            
+            // Отрисовка снежинки
+            ctx.beginPath();
+            ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(250, 250, 255, ${0.7 + Math.random() * 0.3})`;
+            ctx.fill();
+            
+            // Блик
+            ctx.beginPath();
+            ctx.arc(flake.x - flake.size * 0.3, flake.y - flake.size * 0.3, flake.size * 0.3, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+            ctx.fill();
+          });
+          
+          requestAnimationFrame(animate);
+        }
+        
+        animate();
+      }
+      
+      // Инициализация после загрузки
+      initSnow();
+      
+      // Обработка формы
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          const name = document.getElementById('name').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const message = document.getElementById('message').value.trim();
+          
+          // Простая валидация
+          if (!name || !email || !message) {
+            alert('Все поля обязательны для заполнения');
+            return;
+          }
+          
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert('Пожалуйста, введите корректный email');
+            return;
+          }
+          
+          alert(`Спасибо, ${name}! Ваше сообщение отправлено.\nС вами свяжется верстальщик Илья.`);
+          contactForm.reset();
+        });
+      }
+      
+      // Плавная прокрутка для якорных ссылок
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
